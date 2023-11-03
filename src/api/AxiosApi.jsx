@@ -7,7 +7,8 @@ const AxiosApi = {
     const login = {
       id: id,
       pwd: pw
-    }
+    };
+    return await axios.post(KH_DOMAIN + "/users/login", login);
   },
 };
 
